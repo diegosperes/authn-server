@@ -95,6 +95,9 @@ func PublicRoutes(app *app.App) []*route.HandledRoute {
 			route.Get("/oauth/"+providerName+"/return").
 				SecuredWith(route.Unsecured()).
 				Handle(handlers.GetOauthReturn(app, providerName)),
+			route.Delete("/oauth/"+providerName).
+				SecuredWith(route.Unsecured()).
+				Handle(handlers.DeleteOauth(app, providerName)),
 		)
 	}
 
