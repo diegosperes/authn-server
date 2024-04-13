@@ -4,6 +4,16 @@ Based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## HEAD
 
+### Added
+
+* Public and private APIs for oauth account visibility and removal - requires migration to record user email on oauth accounts (#253)
+
+## 1.19.0
+
+### Added
+
+* Sign in with Apple oauth support
+
 ## 1.18.2
 
 ### Fixed
